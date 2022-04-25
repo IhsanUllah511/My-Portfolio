@@ -1,0 +1,342 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1080;
+    height: auto;
+    background-color: rgb(240, 239, 239);
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+}
+
+.jumbotron {
+    background-image: url(./images/copy6.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 37rem;
+}
+
+.jumbotron h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10rem;
+    color: rgb(255, 255, 255);
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
+
+}
+
+.info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 8s steps(30) infinite alternate;
+    border-right: 3px solid black;
+    color: rgb(255, 255, 255);
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 27ch;
+    }
+}
+
+
+
+
+
+/* Accessing Sections and Titles */
+.title h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#about {
+    height: auto;
+
+}
+
+#services,
+#work,
+#blog,
+#contact {
+    height: auto;
+}
+
+#services {
+    /* background: #fff; */
+}
+
+#blog {
+    /* background: #fff; */
+}
+
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: hsla(182, 63%, 54%);
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+    color: #fff;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+
+.nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1rem;
+    margin-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container.about {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+.container.about.row {
+    padding: 1rem;
+}
+
+#about h2 {
+    content: '';
+    height: 1rem;
+}
+
+
+.col-sm.profileImage {
+    position: relative;
+}
+
+
+.profileImage img {
+    height: 110px;
+    width: 110px;
+    margin-left: 0 auto;
+    /* border: 3px solid red; */
+    align-items: center;
+    border-radius: 3px;
+}
+
+/* .about-info span{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+} */
+.info-title {
+    font-size: larger;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: larger;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro h1::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: #0078ff;
+    margin-top: 9px;
+    position: relative;
+    /* display: flex; */
+    /* border-radius: 5px; */
+}
+
+.progress {
+
+    margin-bottom: 1rem;
+}
+
+.skill-title {
+    text-transform: capitalize;
+
+}
+
+.skill-percentage {
+    justify-content: center;
+    float: right;
+
+}
+
+.servicesTitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.servicesTitle p::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: #0078ff;
+    margin-top: 2rem;
+    z-index: 5;
+    left: 45%;
+    position: absolute;
+}
+
+.services .container .row .card-columns {
+    justify-content: center;
+    text-align: center;
+
+}
+
+.services .container .row .card-columns .card {
+    border: 2px solid #6c757d;
+    border-radius: 10px;
+
+}
+
+
+.services .container .row .card-columns .card-img-top {
+    height: 100px;
+    width: 100px;
+    margin-top: 1rem;
+
+}
+
+.services .container .row .card-columns .card-img-top:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(1.2)
+}
+
+.section .services .card-columns .card:hover {
+    box-shadow: none;
+    background-color: #6c757d;
+    color: #fff;
+    /* box-shadow: 0px 0px 5px 5px; */
+}
+
+.workTitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.workTitle p::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 5px;
+    background: #0078ff;
+    margin-top: 1rem;
+
+    left: 47%;
+    position: relative;
+}
+
+
+
+
+.blogTitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.blogTitle p::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #0078ff;
+    margin-top: 1rem;
+    z-index: 1;
+    left: 45%;
+    position: relative;
+}
+
+.card-footer p {
+    display: inline;
+
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* .blog .card-img {
+    height: 300px;
+    overflow: hidden;
+}
+.blog .card-img img{
+    transition: transform .5s ease;
+}
+.blog .card-img :hover img  {
+    height: 300px;
+    overflow: hidden;
+    transition: transform .5s ease;
+    transform: scale(1.5);
+} */
+
+.blog .card-img img:hover {
+    height: 300px;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    transition: transform .5s ease;
+    transform: scale(1.2);
+}
+
+.page-footer{
+    height: 50px;
+    
+}
+.page-footer p{
+    color: whitesmoke;
+}
